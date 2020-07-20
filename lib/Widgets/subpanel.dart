@@ -55,7 +55,7 @@ class _SubtypeState extends State<Subtype> {
           itemBuilder: (ctx, index) {
             return Card(
               elevation: 3,
-              child: Padding(
+              child: MediaQuery.of(context).size.width > 700 ? null : Padding(
                 padding: const EdgeInsets.only(
                     left: 20, right: 20, top: 5, bottom: 5),
                 child: Row(
